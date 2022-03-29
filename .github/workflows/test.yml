@@ -11,4 +11,4 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v2
       - name: DORA
-        uses: ./.github/ations/dora
+        uses: ./.github/actions/dora
