@@ -1,0 +1,16 @@
+name: DORA
+
+description: Measure Delivery Performance
+
+inputs:
+  token: 
+    description: 'Github Token'
+    required: true
+
+runs:
+  using: node16
+  main: index.js
+
+branding:
+  color: purple
+  icon: bar-chart-2
