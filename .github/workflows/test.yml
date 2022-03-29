@@ -1,0 +1,14 @@
+name: Test DORA
+on:
+  push:
+    branches:
+      - main
+jobs:
+  measure:
+    runs-on: ubuntu-latest
+    name: Measure Delivery Performance
+    steps:
+      - name: Checkout
+        uses: /checkout@v2
+      - name: DORA
+        uses: ./.github/ations/dora
