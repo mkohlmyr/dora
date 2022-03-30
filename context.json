@@ -1,0 +1,65 @@
+{
+    "payload": {
+        "action": "closed",
+        "number": 4,
+        "pull_request": {
+            "base": {
+                "label": "mkohlmyr:main",
+                "ref": "main",
+                "repo": {
+                    "created_at": "2022-03-29T12:50:13Z",
+                    "default_branch": "main",
+                    "id": 475440748,
+                    "name": "dora",
+                    "pushed_at": "2022-03-30T13:10:42Z",
+                    "updated_at": "2022-03-29T13:45:07Z"
+                },
+                "sha": "182f829d87735182588c6927d4d4ad06ae53057e"
+            },
+            "closed_at": "2022-03-30T13:10:42Z",
+            "commits": 3,
+            "created_at": "2022-03-30T13:09:34Z",
+            "head": {
+                "label": "mkohlmyr:mk/1",
+                "ref": "mk/1",
+                "repo": {
+                    "created_at": "2022-03-29T12:50:13Z",
+                    "default_branch": "main",
+                    "full_name": "mkohlmyr/dora",
+                    "id": 475440748,
+                    "name": "dora",
+                    "pushed_at": "2022-03-30T13:10:42Z",
+                    "updated_at": "2022-03-29T13:45:07Z"
+                },
+                "sha": "d9b6afd73a232391af410ed4ece7dea1f663163f"
+            },
+            "html_url": "https://github.com/mkohlmyr/dora/pull/4",
+            "id": 894423771,
+            "merge_commit_sha": "e8ec7efa4209cf756d479694798bf6ea621875fd",
+            "merged_at": "2022-03-30T13:10:42Z",
+            "node_id": "PR_kwDOHFambM41T9Lb",
+            "number": 4,
+            "state": "closed",
+            "title": "Mk/1",
+            "updated_at": "2022-03-30T13:10:42Z",
+            "url": "https://api.github.com/repos/mkohlmyr/dora/pulls/4"
+        },
+        "repository": {
+            "created_at": "2022-03-29T12:50:13Z",
+            "default_branch": "main",
+            "full_name": "mkohlmyr/dora",
+            "id": 475440748,
+            "name": "dora",
+            "node_id": "R_kgDOHFambA",
+            "pushed_at": "2022-03-30T13:10:42Z",
+            "updated_at": "2022-03-29T13:45:07Z"
+        }
+    },
+    "eventName": "pull_request",
+    "sha": "e8ec7efa4209cf756d479694798bf6ea621875fd",
+    "ref": "main",
+    "action": "__self",
+    "job": "if_merged",
+    "runNumber": 5,
+    "runId": 2064954637
+}
