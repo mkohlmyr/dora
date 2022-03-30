@@ -13,7 +13,6 @@
                     "full_name": "mkohlmyr/dora",
                     "name": "dora",
                     "pushed_at": "2022-03-30T13:43:19Z",
-                    "size": 152,
                     "ssh_url": "git@github.com:mkohlmyr/dora.git",
                     "updated_at": "2022-03-29T13:45:07Z"
                 },
@@ -32,7 +31,6 @@
                     "full_name": "mkohlmyr/dora",
                     "name": "dora",
                     "pushed_at": "2022-03-30T13:43:19Z",
-                    "size": 152,
                     "updated_at": "2022-03-29T13:45:07Z",
                     "url": "https://api.github.com/repos/mkohlmyr/dora"
                 },
@@ -59,15 +57,5 @@
         }
     },
     "eventName": "pull_request",
-    "sha": "fd08da55e60c69f480540a9a7cb627b52ce00121",
-    "ref": "main",
-    "workflow": "Lead time to change",
-    "action": "__self",
-    "actor": "mkohlmyr",
-    "job": "if_merged",
-    "runNumber": 6,
-    "runId": 2065143126,
-    "apiUrl": "https://api.github.com",
-    "serverUrl": "https://github.com",
-    "graphqlUrl": "https://api.github.com/graphql"
+    "sha": "fd08da55e60c69f480540a9a7cb627b52ce00121"
 }
