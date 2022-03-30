@@ -10,8 +10,10 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v2
-      - uses: borales/actions-yarn@v2.3.0
+      - uses: actions/setup-node@v2
         with:
-          cmd: install # will run `yarn install` command
+          node-version: '16'
+      - run: cd .github/actions/dora
+      - run: npm install
       - name: DORA
         uses: ./.github/actions/dora
