@@ -5,6 +5,9 @@
   "repository": "git@github.com:mkohlmyr/dora.git",
   "author": "Mikael Kohlmyr",
   "license": "MIT",
+  "scripts": {
+    "build": "npx @vercel/ncc build index.js -o dist"
+  },
   "dependencies": {
     "@actions/core": "^1.6.0",
     "@actions/github": "^5.0.0"
