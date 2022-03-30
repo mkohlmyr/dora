@@ -1,0 +1,61 @@
+{
+    "payload": {
+        "action": "closed",
+        "number": 5,
+        "pull_request": {
+            "additions": 65,
+            "base": {
+                "label": "mkohlmyr:main",
+                "ref": "main",
+                "repo": {
+                    "created_at": "2022-03-29T12:50:13Z",
+                    "default_branch": "main",
+                    "full_name": "mkohlmyr/dora",
+                    "name": "dora",
+                    "pushed_at": "2022-03-30T13:43:19Z",
+                    "ssh_url": "git@github.com:mkohlmyr/dora.git",
+                    "updated_at": "2022-03-29T13:45:07Z"
+                },
+                "sha": "e8ec7efa4209cf756d479694798bf6ea621875fd"
+            },
+            "body": null,
+            "changed_files": 1,
+            "closed_at": "2022-03-30T13:43:20Z",
+            "created_at": "2022-03-30T13:40:16Z",
+            "head": {
+                "label": "mkohlmyr:mk/2",
+                "ref": "mk/2",
+                "repo": {
+                    "created_at": "2022-03-29T12:50:13Z",
+                    "default_branch": "main",
+                    "full_name": "mkohlmyr/dora",
+                    "name": "dora",
+                    "pushed_at": "2022-03-30T13:43:19Z",
+                    "updated_at": "2022-03-29T13:45:07Z",
+                    "url": "https://api.github.com/repos/mkohlmyr/dora"
+                },
+                "sha": "1598d4f63d45e90975526af6a6609b529663987e"
+            },
+            "html_url": "https://github.com/mkohlmyr/dora/pull/5",
+            "merge_commit_sha": "fd08da55e60c69f480540a9a7cb627b52ce00121",
+            "merged_at": "2022-03-30T13:43:19Z",
+            "number": 5,
+            "state": "closed",
+            "title": "Mk/2",
+            "updated_at": "2022-03-30T13:43:20Z",
+            "url": "https://api.github.com/repos/mkohlmyr/dora/pulls/5"
+        },
+        "repository": {
+            "created_at": "2022-03-29T12:50:13Z",
+            "default_branch": "main",
+            "forks_url": "https://api.github.com/repos/mkohlmyr/dora/forks",
+            "full_name": "mkohlmyr/dora",
+            "name": "dora",
+            "pushed_at": "2022-03-30T13:43:19Z",
+            "size": 152,
+            "updated_at": "2022-03-29T13:45:07Z"
+        }
+    },
+    "eventName": "pull_request",
+    "sha": "fd08da55e60c69f480540a9a7cb627b52ce00121"
+}
