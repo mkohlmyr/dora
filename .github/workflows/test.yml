@@ -16,3 +16,5 @@ jobs:
       # - run: yarn
       - name: DORA
         uses: ./.github/actions/dora
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
