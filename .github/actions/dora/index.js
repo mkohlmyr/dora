@@ -1,5 +1,5 @@
 const core = require('@actions/core')
-const github = require('@ations/github');
+const github = require('@actions/github');
 
 const token = core.getInput('token');
 const octokit = github.getOctokit(token);
