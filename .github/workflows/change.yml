@@ -1,0 +1,14 @@
+name: Lead time to change
+on:
+  pull_request:
+    types: [closed]
+
+jobs:
+  if_merged:
+    if: github.event.pull_request.merged == true
+    runs-on: ubuntu-latest
+    steps:
+      - name: asd
+        uses: ./github/actions/dora
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
