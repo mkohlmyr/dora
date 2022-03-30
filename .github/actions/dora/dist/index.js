@@ -8508,7 +8508,22 @@ console.log('RUNNER_NAME', process.env.RUNNER_NAME);
 console.log('RUNNER_OS', process.env.RUNNER_OS);
 console.log('RUNNER_TEMP', process.env.RUNER_TEMP);
 console.log('RUNNER_TOOL_CACHE', process.env.RUNNER_TOOL_CACHE);
+console.log('GitHub context', JSON.stringify(github.context, null, 2));
 
+// octokit.rest.pulls.get({
+
+// }).then(res => console.log('Pull Request API Response', JSON.stringify(res, null, 2)))
+
+// const { data: pullRequest } = await octokit.rest.pulls.get({
+//     owner: 'octokit',
+//     repo: 'rest.js',
+//     pull_number: 123,
+//     mediaType: {
+//       format: 'diff'
+//     }
+// });
+
+// console.log(pullRequest);
 })();
 
 module.exports = __webpack_exports__;
