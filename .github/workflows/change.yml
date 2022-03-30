@@ -11,6 +11,6 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v2
       - name: Run DORA
-        uses: ./github/actions/dora
+        uses: ./.github/actions/dora
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
