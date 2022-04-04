@@ -40,17 +40,12 @@ console.log('RUNNER_TEMP', process.env.RUNER_TEMP);
 console.log('RUNNER_TOOL_CACHE', process.env.RUNNER_TOOL_CACHE);
 console.log('GitHub context', JSON.stringify(github.context, null, 2));
 
-// octokit.rest.pulls.get({
-
-// }).then(res => console.log('Pull Request API Response', JSON.stringify(res, null, 2)))
-
-// const { data: pullRequest } = await octokit.rest.pulls.get({
-//     owner: 'octokit',
-//     repo: 'rest.js',
-//     pull_number: 123,
-//     mediaType: {
-//       format: 'diff'
-//     }
-// });
-
-// console.log(pullRequest);
+octokit.request(
+  'GET /repos/{owner}/{repo}/pulls/{pull_number}/commits', 
+  {
+    accept: 'application/vnd.github.v3+json',
+    owner: 'mkohlmyr',
+    repo: 'dora',
+    pull_number: github.context.payload.number
+  }
+).then(console.log);
