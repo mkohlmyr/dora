@@ -40,13 +40,26 @@ console.log('RUNNER_TEMP', process.env.RUNER_TEMP);
 console.log('RUNNER_TOOL_CACHE', process.env.RUNNER_TOOL_CACHE);
 console.log('GitHub context', JSON.stringify(github.context, null, 2));
 
-console.log('starting octokit request');
-octokit.request(
-  'GET /repos/{owner}/{repo}/pulls/{pull_number}/commits', 
-  {
-    accept: 'application/vnd.github.v3+json',
-    owner: 'mkohlmyr',
-    repo: 'dora',
-    pull_number: github.context.payload.number
+async function run() {
+  console.log('executing async function');
+  try {
+    console.log('starting octokit request');
+    const response = await octokit.request(
+      'GET /repos/{owner}/{repo}/pulls/{pull_number}/commits', 
+      {
+        accept: 'application/vnd.github.v3+json',
+        owner: 'mkohlmyr',
+        repo: 'dora',
+        pull_number: github.context.payload.number
+      }
+    );
+    console.log('sucessful octokit request', response);
+  } catch (ex) {
+    console.error('failed octokit request', ex);
+  } finally {
+    console.log('finished octokit request block');
   }
-).then(console.log).catch(console.error).finally(() => console.log('finished octokit request'));
+}
+
+console.log('will execute async function');
+run();
