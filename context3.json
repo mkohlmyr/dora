@@ -1,0 +1,56 @@
+//14:56 first & second commit? (IS THIS COMMIT TIME OR PUSH TIME?)
+//14:57 third & fourth commit
+//14:58 opened PR
+//14:59 fifth commit
+//15:00 sixth commit
+//15:00 closed PR
+//15:01 seventh commit
+//15:02 re-opened PR
+//15:02 merge
+// GIVEN 5 & 6 were pushed together, this is likely COMMIT rather than PUSH time. Great!
+
+{
+    "payload": {
+      "action": "closed",
+      "number": 6,
+      "pull_request": {
+        "base": {
+          "label": "mkohlmyr:main",
+          "ref": "main",
+          "repo": {
+            "created_at": "2022-03-29T12:50:13Z",
+            "default_branch": "main",
+            "name": "dora",
+            "pushed_at": "2022-03-30T14:02:26Z",
+            "updated_at": "2022-03-29T13:45:07Z"
+          },
+          "sha": "fd08da55e60c69f480540a9a7cb627b52ce00121"
+        },
+        "changed_files": 2,
+        "closed_at": "2022-03-30T14:02:26Z",
+        "created_at": "2022-03-30T13:58:17Z",
+        "head": {
+          "label": "mkohlmyr:mk/3",
+          "ref": "mk/3",
+          "sha": "6a00fcb805ddd2b4edd20c5fb3803ef12d6eb775" // <---- last commit
+        },
+        "merge_commit_sha": "21846c3fddf82c7550bda09878453a3da3c34ce9", // <-- squash target (resulting commit of squash, on main)
+        "merged": true,
+        "merged_at": "2022-03-30T14:02:26Z",
+        "number": 6,
+        "state": "closed",
+        "title": "Mk/3",
+        "updated_at": "2022-03-30T14:02:26Z",
+        "url": "https://api.github.com/repos/mkohlmyr/dora/pulls/6"
+      },
+      "repository": {
+        "created_at": "2022-03-29T12:50:13Z",
+        "default_branch": "main",
+        "full_name": "mkohlmyr/dora",
+        "name": "dora",
+        "pushed_at": "2022-03-30T14:02:26Z",
+        "updated_at": "2022-03-29T13:45:07Z",
+        "url": "https://api.github.com/repos/mkohlmyr/dora"
+      }
+    }
+  }
